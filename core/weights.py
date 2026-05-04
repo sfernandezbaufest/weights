@@ -30,6 +30,12 @@ def add_weight(new_weight) -> str:
     write_csv(weights_list, WEIGHTS_CSV_PATH, FIELD_NAMES)
     return result
 
+def get_today_weight() -> float | None:
 
+    weights_list = read_csv(WEIGHTS_CSV_PATH)
+    current_date = datetime.now().strftime("%d/%m/%y")
 
-
+    if weights_list and weights_list[-1]["date"] == current_date:
+        return float(weights_list[-1]["weight"])
+    else:
+        return None

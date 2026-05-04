@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPORTS_CSV_PATH = os.path.join(BASE_DIR, "data", "reports.csv")
 
 FIELD_NAMES = ["date", "body_fat_pct", "skeletal_muscle_mass", "fat_free_mass", "visceral_fat_index", "muscle_quality",
-               "trunk_fat_kg", "trunk_fat_pct", "total_body_water"]
+               "trunk_fat_kg", "trunk_fat_pct", "total_body_water", "neck_cm", "chest_cm", "bicep_cm", "hip_cm", "thigh_cm"]
 
 def add_report(report_data: dict) -> None:
 
