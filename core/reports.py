@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-from csv_utils import read_csv, write_csv
+from core.csv_utils import read_csv, write_csv
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPORTS_CSV_PATH = os.path.join(BASE_DIR, "data", "reports.csv")

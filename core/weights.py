@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-from csv_utils import read_csv, write_csv
+from core.csv_utils import read_csv, write_csv
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))       # __file__ es una variable que python crea automaticamente en cada script que es la ruta del archivo que se esta ejecutando
 WEIGHTS_CSV_PATH = os.path.join(BASE_DIR, "data", "weights.csv")                  # abspath significa "absolute path" se asegura de que la ruta sea absoluta
