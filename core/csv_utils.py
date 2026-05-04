@@ -17,6 +17,7 @@ def write_csv(list_data: list, path: str, field_names: list) -> None:
     """
     Escribe el CSV completo a partir de la lista.
     """
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=field_names)                    # Aqui si hay que pasar FIELD_NAMES porque estamos escribiendo y puede que el archivo este vacio
         writer.writeheader()
