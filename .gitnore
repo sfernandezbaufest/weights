@@ -9,7 +9,7 @@ data/*.csv
 # Mac
 .DS_Store
 
-# PyInstaller (por si acaso)
+# PyInstaller
 build/
 dist/
 *.spec
