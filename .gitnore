@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data
+data/*.csv
+
+# Mac
+.DS_Store
+
+# PyInstaller (por si acaso)
+build/
+dist/
+*.spec
